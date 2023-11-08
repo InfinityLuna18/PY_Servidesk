@@ -23,11 +23,11 @@ try:
                               ';Uid=;PWD=;')
     cursor = conexion.cursor()
     
-    query_tabla = 'SELECT * FROM TB_Servidesk'
+    query_tabla = 'SELECT * FROM TBL_Servidesk'
     
     df_tabla = pd.read_sql_query(query_tabla,conexion)
     
-    df_tabla.info()
+    #df_tabla.info()
 
     cursor.close()
    # data = pd.read_sql('SELECT TOP(100) * FROM TB_Servidesk', cursor)
